@@ -46,7 +46,7 @@ function WordBowl() {
         setSelectedLetters([]);
         setSelectedIndices(new Set());
         if (clickedButtons.includes(index)) return;
-
+        console.log(selectedIndices+" "+selectedLetters);
         console.log(wordFormed);
         let exists = await wordExists(wordFormed);
         if(wordFormed===''){
