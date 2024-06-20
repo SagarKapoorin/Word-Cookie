@@ -49,6 +49,9 @@ function WordBowl() {
 
         console.log(wordFormed);
         let exists = await wordExists(wordFormed);
+        if(wordFormed===''){
+                exists=false;
+        }
         console.log(exists);
         if (arr1.some(a => a === wordFormed)) {
             exists = false;
