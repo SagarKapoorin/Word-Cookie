@@ -6,6 +6,7 @@ const initialState = {
     words_found_atlevel: 0,
     current_word: '',
     word_matched: false,
+    validwords:[],
     levels: [
         {
             id: 0,
@@ -59,6 +60,9 @@ export const gameSlice = createSlice({
     },
     setGameF:(state)=>{
       state.game_completed=false;
+    },
+    setvaidWord:(state,action)=>{
+      state.validwords=action.payload;
     }
   },
 });
