@@ -46,7 +46,7 @@ function WordBowl() {
   const [validCombinations, setValidCombinations] = useState([]);
 
   const handleGenerate = async () => {
-    const combinations = generateCombinations(convertArrayToString(p[level1].letters), 3, 8);
+    const combinations = generateCombinations(convertArrayToString(p[level1].letters), 2, 8);
     const validCombs = [];
     const chunkSize = 10;
 
